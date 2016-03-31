@@ -1,4 +1,4 @@
-package main.com.zane.leetcode;
+package com.zane.algorithm.leetcode;
 
 /**
  * A peak element is an element that is greater than its neighbors.

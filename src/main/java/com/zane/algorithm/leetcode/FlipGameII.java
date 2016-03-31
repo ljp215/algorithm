@@ -1,4 +1,4 @@
-package main.com.zane.leetcode;
+package com.zane.algorithm.leetcode;
 
 /**
  * You are playing the following Flip Game with your friend: Given a string that contains only these two

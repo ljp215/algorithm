@@ -1,4 +1,4 @@
-package main.com.zane.leetcode;
+package com.zane.algorithm.leetcode;
 
 /**
  * According to the Wikipedia's article: "The Game of Life, also known simply as Life,

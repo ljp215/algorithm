@@ -1,8 +1,4 @@
-package main.com.zane.leetcode;
-
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
+package com.zane.algorithm.leetcode;
 
 /**
  * Implement wildcard pattern matching with support for '?' and '*'.

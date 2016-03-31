@@ -1,4 +1,4 @@
-package main.com.zane.leetcode;
+package com.zane.algorithm.leetcode;
 
 import java.util.Collections;
 import java.util.PriorityQueue;

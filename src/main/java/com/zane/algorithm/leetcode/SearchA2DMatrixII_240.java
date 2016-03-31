@@ -52,7 +52,7 @@ public class SearchA2DMatrixII_240 {
     }
 
     public boolean searchMatrix(int[][] matrix, int target) {
-        Set<Point> visited = new HashSet<>();
+        Set<Point> visited = new HashSet<Point>();
 
         return search(matrix, target, 0, 0, visited);
     }
