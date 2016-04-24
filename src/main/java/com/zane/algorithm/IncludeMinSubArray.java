@@ -5,8 +5,6 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * Copyright (c) 2015, Wandou Labs and/or its affiliates. All rights reserved.
- * WANDOU LABS PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
  * Author: luojinping
  * Date: 15/5/20
  * Time: 下午10:01
