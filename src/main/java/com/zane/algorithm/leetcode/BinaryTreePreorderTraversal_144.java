@@ -1,9 +1,9 @@
-package main.com.zane.leetcode;
-
-import main.com.zane.leetcode.model.TreeNode;
+package com.zane.algorithm.leetcode;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import main.com.zane.leetcode.model.TreeNode;
 
 /**
  * Given a binary tree, return the preorder traversal of its nodes' values.
