@@ -1,10 +1,11 @@
-package main.com.zane.leetcode;
+package com.zane.algorithm.leetcode;
 
-import main.com.zane.leetcode.model.TreeNode;
 
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
+
+import com.zane.algorithm.model.TreeNode;
 
 /**
  * Given a binary tree, return the bottom-up level order traversal of its nodes' values.

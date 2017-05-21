@@ -1,4 +1,4 @@
-package main.com.zane.leetcode.model;
+package com.zane.algorithm.model;
 
 /**
  * Created by jinpiluo on 3/29/16.
@@ -8,7 +8,16 @@ public class TreeNode {
     public TreeNode left;
     public TreeNode right;
 
-    TreeNode(int x) {
+    public TreeNode(int x) {
         val = x;
+    }
+
+    @Override
+    public String toString() {
+        return "TreeNode{" +
+                "val=" + val +
+                ", left=" + left +
+                ", right=" + right +
+                '}';
     }
 }

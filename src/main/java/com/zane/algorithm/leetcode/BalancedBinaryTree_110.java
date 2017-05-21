@@ -1,6 +1,7 @@
-package main.com.zane.leetcode;
+package com.zane.algorithm.leetcode;
 
-import main.com.zane.leetcode.model.TreeNode;
+
+import com.zane.algorithm.model.TreeNode;
 
 /**
  * Created by jinpiluo on 3/29/16.

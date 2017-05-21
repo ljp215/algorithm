@@ -3,7 +3,8 @@ package com.zane.algorithm.leetcode;
 import java.util.ArrayList;
 import java.util.List;
 
-import main.com.zane.leetcode.model.TreeNode;
+import com.zane.algorithm.model.TreeNode;
+
 
 /**
  * Given a binary tree, return the preorder traversal of its nodes' values.
