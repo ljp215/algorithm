@@ -17,22 +17,7 @@ import java.util.Stack;
  * return 10.
  */
 public class LargestRectangleInHistogram_84 {
-    // O(n^2), O(1)
     public int largestRectangleArea(int[] height) {
-        int areaMax = 0, area = 0;
-        for (int i = 0; i < height.length; i++) {
-            area = height[i];
-            for (int j = i + 1; j < height.length && height[j] > height[i]; j++) {
-                area += height[i];
-            }
-            areaMax = area > areaMax ? area : areaMax;
-        }
-
-        return areaMax;
-    }
-
-    // O(n), O(n)
-    public int largestRectangleArea2(int[] height) {
         int len = height.length;
         Stack<Integer> s = new Stack<Integer>();
         int maxArea = 0;

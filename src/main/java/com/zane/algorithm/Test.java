@@ -7,12 +7,25 @@ package com.zane.algorithm;
  */
 public class Test {
     public static void main(String[] args) {
-        squarePatternPrint(0);
-        squarePatternPrint(1);
-        squarePatternPrint(2);
-        squarePatternPrint(3);
-        squarePatternPrint(4);
-        squarePatternPrint(9);
+        System.out.println(func(9999));
+        System.out.println(func(99999));
+        System.out.println(func(999999));
+        System.out.println(func(123456789));
+        // squarePatternPrint(0);
+        // squarePatternPrint(1);
+        // squarePatternPrint(2);
+        // squarePatternPrint(3);
+        // squarePatternPrint(4);
+        // squarePatternPrint(9);
+    }
+
+    public static int func(int x) {
+        int count = 0;
+        while (x != 0) {
+            count++;
+            x = x & (x - 1);
+        }
+        return count;
     }
 
     // METHOD SIGNATURE BEGINS, THIS METHOD IS REQUIRED
@@ -51,5 +64,5 @@ public class Test {
             }
         }
     }
-// METHOD SIGNATURE ENDS
+    // METHOD SIGNATURE ENDS
 }

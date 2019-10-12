@@ -13,7 +13,7 @@ public class QuickSort {
      *
      * @param nums
      */
-    public void lomutoQuickSort(int nums[]) {
+    public void lomutoQuickSort(int[] nums) {
         lomutoQuickSort(nums, 0, nums.length - 1);
 
         for (int num : nums) {
@@ -21,16 +21,15 @@ public class QuickSort {
         }
     }
 
-    private void lomutoQuickSort(int nums[], int lo, int hi) {
+    private void lomutoQuickSort(int[] nums, int lo, int hi) {
         if (lo < hi) {
             int pivot = lomutoPartition(nums, lo, hi);
             lomutoQuickSort(nums, lo, pivot - 1);
             lomutoQuickSort(nums, pivot + 1, hi);
-
         }
     }
 
-    private int lomutoPartition(int nums[], int lo, int hi) {
+    private int lomutoPartition(int[] nums, int lo, int hi) {
         int pivot = nums[hi];
         int i = lo;
         for (int j = lo; j < hi; j++) {
@@ -40,7 +39,8 @@ public class QuickSort {
             }
         }
 
-        swap(nums, i, hi); // replace the guard element
+        // replace the guard element
+        swap(nums, i, hi);
         return i;
     }
 
@@ -57,7 +57,7 @@ public class QuickSort {
      *
      * @param nums
      */
-    public void hoareQuickSort(int nums[]) {
+    public void hoareQuickSort(int[] nums) {
         hoareQuickSort(nums, 0, nums.length - 1);
 
         for (int num : nums) {
@@ -65,7 +65,7 @@ public class QuickSort {
         }
     }
 
-    private void hoareQuickSort(int nums[], int lo, int hi) {
+    private void hoareQuickSort(int[] nums, int lo, int hi) {
         if (lo < hi) {
             int pivot = hoarePartition(nums, lo, hi);
             hoareQuickSort(nums, lo, pivot);
@@ -74,7 +74,7 @@ public class QuickSort {
         }
     }
 
-    private int hoarePartition(int nums[], int lo, int hi) {
+    private int hoarePartition(int[] nums, int lo, int hi) {
         int pivot = nums[lo];
         int i = lo, j = hi;
         while (true) {
@@ -94,7 +94,7 @@ public class QuickSort {
         }
     }
 
-    private void swap(int nums[], int i, int j) {
+    private void swap(int[] nums, int i, int j) {
         int temp = nums[j];
         nums[j] = nums[i];
         nums[i] = temp;

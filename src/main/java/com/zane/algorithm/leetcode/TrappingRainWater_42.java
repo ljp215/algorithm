@@ -26,4 +26,14 @@ public class TrappingRainWater_42 {
         }
         return max;
     }
+
+    public static void main(String[] args) {
+        TrappingRainWater_42 trappingRainWater = new TrappingRainWater_42();
+        System.out.println(trappingRainWater.trap(new int[] {0, 0, 0}));
+        System.out.println(trappingRainWater.trap(new int[] {0, 1, 2}));
+        System.out.println(trappingRainWater.trap(new int[] {2, 1, 2, 1}));
+        System.out.println(trappingRainWater.trap(new int[] {2, 0, 0, 8, 0, 10}));
+        System.out.println(trappingRainWater.trap(new int[] {0, 2, 0, 3, 1, 2, 0, 2, 1, 4, 2, 1}));
+        System.out.println(trappingRainWater.trap(new int[] {0, 4, 6, 8, 1, 5, 7, 12, 2, 13, 2}));
+    }
 }

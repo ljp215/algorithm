@@ -12,14 +12,14 @@ import java.util.*;
  * <p>
  * Created by jinpiluo on 3/24/16.
  */
-public class LRUCache {
+public class LRUCache_146 {
 
     private Map<Integer, Node> map;
     private Node head; // dummy "fence" head
     private Node tail; // dummy "fence" tail
     private int capacity;
 
-    public LRUCache(int capacity) {
+    public LRUCache_146(int capacity) {
         this.capacity = capacity;
         map = new HashMap<Integer, Node>();
         head = new Node(-1, -1);
@@ -115,12 +115,12 @@ public class LRUCache {
     }
 
     public static void main(String[] args) {
-        LRUCache lruCache = new LRUCache(1);
-        lruCache.set(2, 1);
-        System.out.println(lruCache.get(2));
-        lruCache.set(3, 2);
-        System.out.println(lruCache.get(2));
-        System.out.println(lruCache.get(3));
+        LRUCache_146 lruCache146 = new LRUCache_146(1);
+        lruCache146.set(2, 1);
+        System.out.println(lruCache146.get(2));
+        lruCache146.set(3, 2);
+        System.out.println(lruCache146.get(2));
+        System.out.println(lruCache146.get(3));
 
 //        LRUCache lruCache = new LRUCache(3);
 //        lruCache.set(1, 1);
